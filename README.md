@@ -40,13 +40,13 @@ Agregar casos de prueba al código existente.
    archivo `DateFormatterTests.cs` porque, también por convención, el archivo
    tiene el nombre de la clase que contiene.
 
-5. Genera una referencia en `Library.Tests.csproj` hacia `Library.csproj`; para
+5. Genera una referencia en `LibraryTests.csproj` hacia `Library.csproj`; para
    eso ejecuta el siguiente comando en la carpeta `tests`: `dotnet add
-   ./Library.Tests/Library.Tests.csproj reference
+   ./LibraryTests/LibraryTests.csproj reference
    ../src/Library/Library.csproj`.
 
 6. Muévete a la carpeta raíz de proyecto. Agrega el proyecto a la solución con
-   el comando `dotnet sln add ./test/`.
+   el comando `dotnet sln add ./tests/LibraryTests`.
 
 7. Haz uno o más casos de prueba que comprueben que la función está bien
    implementada. Incluye casos de prueba para, al menos, los siguientes casos:

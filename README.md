@@ -52,8 +52,8 @@ Los comandos para eso ya te los dimos, pero los repasaremos en este ejercicio.
          Library.Tests.csproj
    ```
 
-3. En la carpeta `./src/Program`, crea un archivo `Program.cs` con este
-   contenido:
+3. En la carpeta `./src/Program`, reemplaza el contenido del archivo
+   `Program.cs` con este contenido:
 
    ```csharp
    using System;
@@ -78,7 +78,8 @@ Los comandos para eso ya te los dimos, pero los repasaremos en este ejercicio.
    }
    ```
 
-4. En la carpeta `./src/Library`, crea un archivo `DateFormatter.cs` con este
+4. En la carpeta `./src/Library`, renombra el archivo `Class1.cs` por
+   `DateFormatter.cs`, y reemplaza el contenido de ese archivo con este
    contenido:
 
    ```csharp
@@ -107,16 +108,16 @@ Los comandos para eso ya te los dimos, pero los repasaremos en este ejercicio.
    }
    ```
 
-5. En la carpeta `./test/Library.Tests`, renombra el archivo `UnitTests1.cs`
-   creado en un paso anterior a `DateFormatterTests` y la clase que contiene de
-   `Tests` a `DateFormatterTests`. La convención es que haya una clase de prueba
-   para cada clase a probar con el mismo nombre, y el sufijo `Tests`. Como la
-   clase a probar es `DateFormatter`, la clase de prueba es
-   `DateFormatterTests`, y el archivo `DateFormatterTests.cs` porque, también
-   por convención, el archivo tiene el nombre de la clase que contiene.
+5. En la carpeta `./test/Library.Tests`, renombra el archivo `UnitTests1.cs` a
+    `DateFormatterTests` y la clase que contiene de `Tests` a
+   `DateFormatterTests`. La convención es que haya una clase de prueba para cada
+   clase a probar con el mismo nombre, y el sufijo `Tests`. Como la clase a
+   probar es `DateFormatter`, la clase de prueba es `DateFormatterTests`, y el
+   archivo `DateFormatterTests.cs` porque, también por convención, el archivo
+   tiene el nombre de la clase que contiene.
 
-6. Haz uno o más casos de prueba para una función `string ChangeFormat(string)`.
-   Incluye casos de prueba para, al menos, los siguientes casos:
+6. Haz uno caso de prueba para la función `string ChangeFormat(string)`. Elije
+   alguno los siguientes escenarios:
 
    * Una fecha en formato correcto
 
@@ -124,4 +125,21 @@ Los comandos para eso ya te los dimos, pero los repasaremos en este ejercicio.
 
    * Una fecha en blanco
 
-7. Corrige el código provisto, para que pasen tus casos de prueba.
+   Recuerda hacer un caso de prueba, es decir, un método con el atributo
+   `[Test]`, para cada escenario a probar. Te sugerimos que para los nombres de
+   los casos de prueba uses la convención `Method_Scenario_ExpectedResult`. Por
+   ejemplo, para algunos de los escenarios anteriores, podrías usar:
+
+   * `ChangeFormat_ValidInputDate_ReturnsConvertedDate`.
+
+   * `ChangeFormat_InvalidInputDate_ReturnsEmpty`
+
+   * `ChangeFormat_EmptyInput_ReturnsEmpty`
+
+   No olvides seguir la estructura `Arrange`, `Act`, `Assert` para programar los
+   casos de prueba.
+
+7. Corrige el código provisto, para que pasen el nuevo caso de prueba.
+
+8. Repite los pasos 6 y 7 para nuevos escenarios.
+

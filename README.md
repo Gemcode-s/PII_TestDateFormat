@@ -28,15 +28,12 @@ El la mayoría de los ejercicios hasta ahora te dábamos un repositorio para
 clonar o para usar como plantilla. Ahora también te damos un repositorio y el
 código de partida, pero tú deberás crear la estructa de carpetas y proyectos.
 
-Los comandos para eso ya te los dimos; si no lo recuerdas están
-[aquí](https://github.com/ucudal/PII_Comandos/blob/master/Crear_Proyecto_C%23.md).
-De ese documento, usarás del paso 2 en adelante —el paso 1 crea la carpeta del
-proyecto, pero en este caso usaremos la raíz del repositorio, por lo que no es
-necesario ese primer paso—.
+Los comandos para eso ya te los dimos, pero los repasaremos en este ejercicio.
 
 ## Pasos
 
-1. Clona este repositorio en tu equipo.
+1. Crea tu propio repositorio a partir de esta plantilla y clona ese repositorio
+   en tu equipo.
 
 2. Usando la terminal integrada en Rider, completa los pasos 2 a 13 indicados
    [aquí](https://github.com/ucudal/PII_Comandos/blob/master/Crear_Proyecto_C%23.md).

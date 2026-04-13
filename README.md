@@ -35,7 +35,7 @@ Los comandos para eso ya te los dimos, pero los repasaremos en este ejercicio.
 1. Crea tu propio repositorio a partir de esta plantilla y clona ese repositorio
    en tu equipo.
 
-2. Usando la terminal integrada en Rider, completa los pasos 2 a 13 indicados
+2. Usando la terminal integrada en Visual Studio Code, completa los pasos 2 a 13 indicados
    [aquí](https://github.com/ucudal/PII_Comandos/blob/master/Crear_Proyecto_C%23.md).
 
    Debería quedar una estructra como la siguiente:
